@@ -3,32 +3,67 @@
     padding: 0;
 }
 
+:root {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 0;
+    background-image: radial-gradient(rgb(255,255,255) 50%, rgba(255, 255, 255, 0.65)) ,url( "/dist/pattern.svg" );
+    height: 100vh;
+
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #dfdfdf;
+    margin: 0;
+    margin-top: 7rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+a, a:visited, a:active {
+    text-decoration: underline;
+    text-decoration-color: #4895ec;
+    color: #004da5;
+}
+
+a:hover{
+    background: #3A1C71;
+    background: -webkit-linear-gradient(128deg, #FFAF7B, #D76D77, #3A1C71);
+    background: linear-gradient(128deg, #FFAF7B, #D76D77, #3A1C71);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: .7rem 0 .5rem;
+}
+
+ul {
+    margin-top: 0.65rem;
 }
 
 .card-wrapper {
-    position: relative;
-    margin: 0.5em;
-    background: linear-gradient(90deg, #184a80, #581350);
-    border-radius: 15px;
+    margin: 1rem;
+    background: #3A1C71;
+    background: -webkit-linear-gradient(128deg, #FFAF7B, #D76D77, #3A1C71);
+    background: linear-gradient(128deg, #FFAF7B, #D76D77, #3A1C71);
+    border-radius: 1.2rem;
+    box-shadow: #c5c5c5 0 0 3.4rem;
 }
 
 .card {
-    position: relative;
-    padding: 2.5rem;
-    margin-bottom: 1rem;
+    margin: 1.3rem 1.3rem 0 1.3rem;
+    padding: 1rem 2.2rem 3rem 2rem;
     background-color: white;
-    border-radius: 15px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .list {
-    padding-top: 1rem;
     padding-left: 1.5rem;
     list-style: square;
 }

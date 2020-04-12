@@ -3,18 +3,18 @@
   --color-secondary: midnightblue;
 }
 
-main {
-  margin-top: 20vh;
-}
-
 body {
   margin: 0;
   background-image: radial-gradient(white 45%, rgba(255, 255, 255, 0.75) 100%),
-    url("/dist/pattern.svg");
+  url("/dist/pattern.svg");
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
+}
+
+main {
+  margin-top: 10vh;
 }
 
 a {
@@ -33,6 +33,7 @@ a {
   box-shadow: lightsteelblue 0 0 3.4rem;
   padding: 1.2rem;
   padding-bottom: 0;
+  margin: .4em;
 }
 
 .card {

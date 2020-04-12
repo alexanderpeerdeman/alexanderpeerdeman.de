@@ -7,7 +7,7 @@ body {
   margin: 0;
   background-image: radial-gradient(white 45%, rgba(255, 255, 255, 0.75) 100%),
   url("/dist/pattern.svg");
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;

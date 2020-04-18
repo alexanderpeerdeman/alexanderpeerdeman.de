@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'fira_sanssemibold';
+  font-family: 'Fira Sans Semibold';
   src: url('type/firasans-semibold-webfont.woff2') format('woff2'),
        url('type/firasans-semibold-webfont.woff') format('woff');
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'open_sansregular';
+  font-family: 'Open Sans Regular';
   src: url('type/opensans-regular-webfont.woff2') format('woff2'),
        url('type/opensans-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 :root {
-  --color-primary: DarkOrchid;
+  --color-primary: RebeccaPurple;
   --color-secondary: midnightblue;
 }
 
@@ -23,14 +23,14 @@ body {
   margin: 0;
   background-image: radial-gradient(rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.8) 100%),
   url("/svg/pattern.svg");
-  font-family: 'open_sansregular', sans-serif;
+  font-family: 'Open Sans Regular', sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
 }
 
 main {
-  margin-top: 20vh;
+  margin-top: 17vh;
 }
 
 a {
@@ -62,7 +62,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'fira_sanssemibold', sans-serif;  
+  font-family: 'Fira Sans Semibold', sans-serif;  
   font-weight: bolder;
 }
 

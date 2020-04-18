@@ -1,54 +1,71 @@
+@font-face {
+  font-family: 'fira_sanssemibold';
+  src: url('type/firasans-semibold-webfont.woff2') format('woff2'),
+       url('type/firasans-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('type/opensans-regular-webfont.woff2') format('woff2'),
+       url('type/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --color-primary: royalblue;
+  --color-primary: DarkOrchid;
   --color-secondary: midnightblue;
 }
 
 body {
   margin: 0;
-  background-image: radial-gradient(white 45%, rgba(255, 255, 255, 0.75) 100%),
-  url("/dist/pattern.svg");
-  font-family: Arial, sans-serif;
+  background-image: radial-gradient(rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.8) 100%),
+  url("/svg/pattern.svg");
+  font-family: 'open_sansregular', sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
 }
 
 main {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.card-wrapper {
-  background: var(--color-primary);
-  background: linear-gradient(
-    128deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  border-radius: 1.2rem;
-  box-shadow: lightsteelblue 0 0 3.4rem;
-  padding: 1.2rem;
-  padding-bottom: 0;
-  margin: .4em;
+.logo-tri {
+  position: absolute;
+  float: left;
+  top: -150px;
+  left: -100px;
+  z-index: -1;
 }
 
-.card {
-  padding: 1rem 3rem;
-  background-color: white;
-  border-radius: 1rem;
-  margin-bottom: 1.2rem;
+.wrapper {  
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: #ddd 0 0 6rem;
+  padding: 1.5rem 3rem;
 }
 
-.card:last-of-type {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.separator {
+  margin-top: 3rem;
+  height: 1px;
+  background-color: var(--color-primary);
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'fira_sanssemibold', sans-serif;  
+  font-weight: bolder;
 }
 
 h2 {
-  margin-top: 1.5em;
-  font-size: 18px;
+  font-size: 22px;
 }

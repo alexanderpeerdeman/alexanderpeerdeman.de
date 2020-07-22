@@ -15,7 +15,7 @@
 }
 
 :root {
-  --color-primary: RebeccaPurple;
+  --color-primary: orangered;
   --color-secondary: midnightblue;
 }
 
@@ -67,5 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
+  margin-top: 3rem;
 }
